@@ -1,0 +1,42 @@
+<h2>Products</h2>
+
+<h3>
+  <a [title]="product.name + ' details'">
+   Phone XL 
+   </a>
+</h3>
+<p *ngIf="product.description">
+    Description: {{ product.description }}
+</p> 
+
+Description: A large phone with one of the best screens on the market
+<button (click)="share()">
+  Share
+  </button>
+<h3> 
+  <a [title]="product.name + ' details'">
+    Phone Mini
+    </a>    
+<p *ngIf="product.description">
+    Description: {{ product.description }}
+</p>
+
+<button (click)="share()">
+  Share
+</button>  
+</h3> Description: A small phone that is easy to carry around 
+<h3>
+  <a [title]="product.name + ' details'">
+    Phone Standard
+    </a>
+</h3> Description: A standard size phone which is affordable
+
+<button (click)="share()">
+  Share
+</button>  
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
